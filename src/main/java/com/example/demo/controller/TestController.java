@@ -15,6 +15,7 @@ public class TestController {
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
+        log.debug("deeja");
         return testService.getTest();
     }
 }
